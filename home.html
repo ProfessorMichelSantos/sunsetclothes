@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Clothes</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav section section"
+                "footer footer footer";
+            grid-template-columns: 15% 40% 45%;
+            grid-gap: 10px;
+            background-color: #b0c4de;
+            margin: 0;
+        }
+
+        .botao {
+            background-color: #b0c4de; /* Cor de fundo */
+            color: white; /* Cor do texto branco */
+            padding: 15px 32px; /* Espaçamento interno */
+            text-align: center; /* Centraliza o texto */
+            text-decoration: none; /* Remove sublinhado do texto */
+            display: inline-block; /* Exibe como bloco inline */
+            font-size: 16px; /* Tamanho da fonte */
+            margin: 4px 2px; /* Margem */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            border: none; /* Remove borda */
+            border-radius: 4px; /* Bordas arredondadas */
+        }
+
+        header {
+            grid-area: header;
+            background-image: url('img/banner.png'); /* Defina o caminho da imagem aqui */
+            background-size: cover; /* Ajusta a imagem para cobrir todo o header */
+            background-position: center; /* Centraliza a imagem */
+            color: #FFFFFF; /* Define a cor do texto */
+            text-align: center; /* Centraliza o texto */   
+            font-size: 2em; /* Aumenta o tamanho da fonte */    
+            padding: 10px 0; /* Adiciona espaçamento interno */
+        }
+
+        section, footer {
+            padding: 20px;
+            background-color: #FFFFFF;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+            background-color: #FFFFFF; 
+        }
+        nav ul li {
+            display: block;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #809bbf; 
+            color: white;
+        }
+
+        section {
+            grid-area: section;
+            display: flex;
+            flex-direction: column;
+        }
+
+        article { 
+            background-color: #FFFFFF; 
+            padding: 20px; 
+            margin-bottom: 10px; 
+        }
+    </style>
+
+
+    <script>
+        function mostrarMensagem() {
+            alert("Compra efetuada com sucesso!");
+        }
+    </script>
+
+
+</head>
+<body>
+    <header><h1>Sunset Clothes</h1></header>
+    <nav>
+        <p align="center"><b>Menu de Navegação</b></p>
+        <ul>
+           <li><a href="feminino.html">Roupas Femininas</a></li>
+            <li><a href="masculino.html">Roupas Masculinas</a></li>
+            <li><a href="infantil.html">Roupas Infantis</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </nav>
+    <section>
+      
+        <article>
+            <p align="center"><img src="img/home.png" width="400" height="500"></p>
+            
+        </article>
+        <footer></footer>
+    </section>
+    <footer><p align="center">Sunset Clothes, direitos reservados</p></footer>
+</body>
+</html>
