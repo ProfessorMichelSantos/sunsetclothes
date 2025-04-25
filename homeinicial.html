@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Clothes</title>
+
+ <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav section section"
+                "footer footer footer";
+            grid-gap: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        header, nav, section, footer {
+            padding: 20px;
+            background-color: #666;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section;
+            display: flex;
+            flex-direction: column;
+        }
+
+         article { 
+             background-color:#999; 
+             padding :20px; 
+             margin-bottom :10px ; 
+         }
+  
+     </style>  
+   
+ </head >  
+
+
+ <body >  
+     <header ><h1 > Cabeçalho </h1 ></header >  
+
+     <nav >
+         <p > Menu de Navegação </p >
+     </nav >  
+     <section >
+         <header ><h2 > Cabeçalho da Seção </h2 ></header >
+
+         <article >
+		<p > Foto </p >
+		<p > Descrição </p >
+	</article >
+
+         <footer ><p > Comprar </p ></footer >
+
+     </section >
+   
+     <footer><p>Rodapé Principal</p></footer>
+</body>
+</html>
